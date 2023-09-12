@@ -1,0 +1,10 @@
+body {
+    display: flex;
+    margin: 7rem;
+}
+
+.library-card {
+    height: 10rem;
+    width: 20rem;
+    background-color: peachpuff;
+}
