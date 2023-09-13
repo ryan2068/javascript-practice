@@ -1,25 +1,17 @@
-loginForm = document.querySelector('#loginForm')
-myUsername = document.querySelector('#title')
-myPassword = document.querySelector('#author')
-
-library = []
-
-let book = function(title, author) {
-  this.title = title,
-  this.author = author
-}
+form = document.querySelector("form")
+firstName = document.querySelector("#first-name")
+lastName = document.querySelector("#last-name")
 
 
-
-loginForm.addEventListener("submit", (e) => {
-  e.preventDefault()
-  library.push(new book(myUsername.value, myPassword.value))
-  console.log(library)
+form.addEventListener('submit', (e) => {
+    e.preventDefault() 
+    card = document.createElement("div")
+    card.textContent = `${firstName.value} ${lastName.value}`
+    document.body.append(card)
+    
+    
+    
 })
 
-card = document.createElement('div')
-card.classList.add('library-card')
 
 
-card.textContent += library
-document.body.append(card)
