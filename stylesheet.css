@@ -1,10 +1,23 @@
-body {
-    display: flex;
-    margin: 7rem;
+html, body {
+    max-width: 200vh;
+    max-height: 100vh;
+    
 }
 
-.library-card {
+div {
     height: 10rem;
     width: 20rem;
     background-color: peachpuff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    align-items: center;
+}
+
